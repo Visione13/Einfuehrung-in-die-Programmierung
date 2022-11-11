@@ -1,0 +1,56 @@
+1.
+Entwerfen Sie jeweils eine if-Anweisung, die ausgibt, ob eine ganze Zahl n
+a) größer, kleiner oder gleich Null ist,
+b) eine gerade oder ungerade Zahl ist.
+
+if(n==0) {
+	System.out.println(n + " ist Null")
+}
+else if(n > 0) {
+	System.out.println(n + " ist größer als Null")
+}
+else {
+	System.out.println(n + " ist kleiner als Null")
+}
+
+if(n %2 == 0){
+	System.out.println(n + " ist grade")
+}
+else {
+	System.out.println(n+ " ist ungrade")
+}
+
+2.
+Formulieren Sie eine Switch-Anweisung, die für eine Variable m vom Typ String die
+Anzahl der Tage im jeweiligen Monat ausgibt (ohne Berücksichtigung von
+Schaltjahren), falls m den Wert „Januar“, „Februar“, „März“, „April“, „Mai“, „Juni“,
+„Juli“, „August“, „September“, „Oktober“, „November“ oder „Dezember“ hat.
+Andernfalls soll die Meldung „Kein Monatsname übergeben!“ ausgegeben werden.
+
+switch(m) { 
+	case "Januar":
+	case "März":
+	case "Mai":
+	case "Juli":
+	case "August":
+	case "Oktober":
+	case "Dezember":
+	System.out.println(m+ " hat 31 Tage");
+	break;
+	case "April":
+	case "Juni":
+	case "September":
+	case "November":
+	System.out.println(m+ " hat 30 Tage");
+	break;
+	case "Februar":
+	System.out.println(m+ " hat 28 Tage");
+	break;
+	default:
+	System.out.println("Kein Monatsname übergeben!");
+}
+
+3.
+Programmieren Sie eine Funktion intToBinärString, die für einen Integer-Wert n
+≥ 0 dessen Binärdarstellung als Zeichenkette und für n < 0 soll d den String „0“
+zurückgibt.
